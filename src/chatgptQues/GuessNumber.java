@@ -18,5 +18,39 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class GuessNumber {
+	public static void main(String args[]) {
+		
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		Random rand = new Random();
+		
+		
+		int systemChoice = rand.nextInt(101);
+		int range = 10;
+		int i;
+		
+		for(i=1;i<=range;i++) {
+			
+			System.out.println("Enter your Guess");
+			int userGuess = scan.nextInt();
+			if (userGuess == systemChoice ) {
+				System.out.println("Yaay You Guessed it");
+				break;
+			}
+			else if(userGuess > systemChoice) {
+				System.out.println("Too High");
+				continue;
+			}
+			else {
+				System.out.println("Too low");
+				continue;
+			}
+			
 
+		}
+		scan.close();
+		if (i>range) {
+			System.out.println("Your 10 attempts are over");
+		}
+	}
 }
