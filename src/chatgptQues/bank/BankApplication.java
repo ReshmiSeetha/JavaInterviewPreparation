@@ -1,4 +1,4 @@
-package chatgptQues;
+package chatgptQues.bank;
 
 
 public class BankApplication {

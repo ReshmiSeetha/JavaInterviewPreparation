@@ -1,4 +1,4 @@
-package chatgptQues;
+package chatgptQues.bank;
 
 class CurrentAccount extends BankAccount {
 	private double overdraftLimit;

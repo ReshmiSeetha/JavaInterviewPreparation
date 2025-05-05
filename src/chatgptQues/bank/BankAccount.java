@@ -1,4 +1,4 @@
-package chatgptQues;
+package chatgptQues.bank;
 
 public abstract class BankAccount {
 	private String accountHolder;

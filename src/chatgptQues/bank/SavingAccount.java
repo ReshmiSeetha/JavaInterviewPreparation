@@ -1,4 +1,4 @@
-package chatgptQues;
+package chatgptQues.bank;
 
 class SavingAccount extends BankAccount{
 	private double interestRate;
