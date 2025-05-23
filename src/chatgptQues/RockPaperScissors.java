@@ -18,12 +18,12 @@ public class RockPaperScissors {
 		}
 		
 		String[] choices= {"rock","paper","scissors"};
-		String systemChoice=choices[random.nextInt(3)];
+		String systemChoice=choices[random.nextInt(3)];//0,1,2 => 2 choices[2] = scissors
 		
 		System.out.println("System choose "+systemChoice);
 		
 		if(userChoice.equals(systemChoice)) {
-			System.out.println("It's a draw !!!😊😊rock");
+			System.out.println("It's a draw !!!😊😊");
 		}		
 		else if(userChoice.equals("rock") && systemChoice.equals("scissors") ||
 		   userChoice.equals("scissors") && systemChoice.equals("paper") ||
